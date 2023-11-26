@@ -1,3 +1,6 @@
+![HERO](https://github.com/ilyaasomar/job-connect/assets/48979155/07aceee0-2e5a-4daf-97fe-8c12a2e3ea38)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

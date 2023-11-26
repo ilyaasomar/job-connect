@@ -21,13 +21,13 @@ const Opportunities = () => {
           <span className="text-black">Job Opportunities</span>
         </p>
         {/* main section */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-10 mt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-10 gap-y-12 mt-10">
           {/* frist div */}
           <div className="flex flex-col gap-y-4">
             {/* div one */}
             {opportunitiesCardInfo.map((info) => (
               <>
-                <div className="px-4 border-l-2 flex flex-col gap-y-2">
+                <div className="px-4 border-l-2 flex flex-col gap-y-2 group-[]:hover:border-primaryColor">
                   <div className="flex items-center gap-x-10">
                     <p className="text-[24px] font-normal text-primaryColor">
                       {info.title}
@@ -58,12 +58,12 @@ const Opportunities = () => {
                 </p>
               </CardTitle>
               <CardDescription className="flex gap-x-3">
-                <div className="p-1 rounded-full bg-[#00378b] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#00378b] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-white">
                     Full Time
                   </p>
                 </div>
-                <div className="p-1 rounded-full bg-[#00378b] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#00378b] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-white">
                     Product
                   </p>
@@ -128,12 +128,12 @@ const Opportunities = () => {
                 </p>
               </CardTitle>
               <CardDescription className="flex gap-x-3">
-                <div className="p-1 rounded-full bg-[#BBD3F8] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#BBD3F8] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-black">
                     Full Time
                   </p>
                 </div>
-                <div className="p-1 rounded-full bg-[#BBD3F8] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#BBD3F8] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-black">
                     Head of Design
                   </p>
@@ -198,12 +198,12 @@ const Opportunities = () => {
                 </p>
               </CardTitle>
               <CardDescription className="flex gap-x-3">
-                <div className="p-1 rounded-full bg-[#BBD3F8] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#BBD3F8] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-black">
                     Full Time
                   </p>
                 </div>
-                <div className="p-1 rounded-full bg-[#BBD3F8] w-24 flex items-center justify-center">
+                <div className="p-1 rounded-full bg-[#BBD3F8] w-fit px-3 flex items-center justify-center">
                   <p className="text-[16px] leading-[24px] text-black">
                     Design
                   </p>
