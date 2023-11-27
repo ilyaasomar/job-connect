@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="w-full mt-36">
       <div className="container mx-auto ">
-        <div className="flex items-center gap-x-5">
+        <div className="flex items-center gap-x-16">
           {/* left section */}
           <div className="flex flex-1">
             <div className="flex flex-col gap-y-4">
@@ -60,13 +60,15 @@ const About = () => {
           </div>
           {/* right section */}
           <div className="flex-1">
-            <div className="bg-[#F3F7FA] rounded-lg">
-              <Image
-                src="/images/engineer.png"
-                width={300}
-                height={300}
-                alt="image"
-              />
+            <div className="bg-[#F3F7FA] relative flex items-center justify-center rounded-lg pt-10">
+              <Image src="/images/1.png" width={250} height={250} alt="image" />
+
+              <div className="absolute -left-16 shadow-2xl top-16 rounded-md w-52 py-3 bg-white px-4 flex gap-x-2">
+                <ShieldCheck />
+                <p className="text-[18px] text-[#131517] leading-[24px] font-semibold">
+                  100% Trusted
+                </p>
+              </div>
             </div>
           </div>
         </div>
