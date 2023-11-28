@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
@@ -10,6 +11,8 @@ import {
   SelectValue,
 } from "./ui/select";
 import { Search } from "lucide-react";
+import { motion } from "framer-motion";
+import { slideInFromLeft } from "@/utils/motion";
 const Hero = () => {
   return (
     <div className="relative">
@@ -17,16 +20,26 @@ const Hero = () => {
         <div className="px-4 md:container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center py-12 gap-y-16 lg:gap-x-1">
             {/* right section */}
-            <div className="flex w-full lg:flex-1 items-start flex-col gap-y-10">
-              <div className="flex flex-row gap-x-2">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              className="flex w-full lg:flex-1 items-start flex-col gap-y-10"
+            >
+              <motion.div
+                variants={slideInFromLeft(0.5)}
+                className="flex flex-row gap-x-2"
+              >
                 <Switch />
                 <p className="text-[16px] leading-[24px] text-[#131517]">
                   Find Your Dream Job
                 </p>
-              </div>
-              <h1 className="text-3xl md:text-[48px] text-black font-extrabold leading-[61px] font-inter">
+              </motion.div>
+              <motion.h1
+                variants={slideInFromLeft(0.5)}
+                className="text-3xl md:text-[48px] text-black font-extrabold leading-[61px] font-inter"
+              >
                 Freelance Jobs and Talents at Your Fingertips{" "}
-              </h1>
+              </motion.h1>
               <p className="font-normal font-inter text-[24px] leading-normal text-[#24272D]">
                 Connect with top freelancers and clients on our platform! find
                 your perfect match for your next project.
@@ -34,7 +47,7 @@ const Hero = () => {
               <Button className="bg-primaryColor-0 font-inter hover:bg-primaryColor-0">
                 Make An Enquiry
               </Button>
-            </div>
+            </motion.div>
             {/* left section */}
             <div className="flex w-full z-10 lg:flex-1 items-center relative lg:justify-center">
               <Image
