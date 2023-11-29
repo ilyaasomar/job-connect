@@ -59,15 +59,44 @@ const About = () => {
             </div>
           </div>
           {/* right section */}
-          <div className="flex-1">
+          <div className="flex-1 h-fit">
             <div className="bg-[#F3F7FA] relative flex items-center justify-center rounded-lg pt-10">
               <Image src="/images/1.png" width={250} height={250} alt="image" />
-
               <div className="absolute -left-16 shadow-2xl top-16 rounded-md w-52 py-3 bg-white px-4 flex gap-x-2">
                 <ShieldCheck />
                 <p className="text-[18px] text-[#131517] leading-[24px] font-semibold">
                   100% Trusted
                 </p>
+              </div>
+              {/* stars */}
+              <div className="absolute top-16 right-20">
+                <Image
+                  src="/images/Portal.png"
+                  width={30}
+                  height={30}
+                  alt="image"
+                  className="object-cover"
+                />
+              </div>
+              {/* bottom star right */}
+              <div className="absolute top-[260px] right-12">
+                <Image
+                  src="/images/Portal.png"
+                  width={30}
+                  height={30}
+                  alt="image"
+                  className="object-cover"
+                />
+              </div>
+              {/* bottom star lett */}
+              <div className="absolute top-[330px] left-12">
+                <Image
+                  src="/images/Portal.png"
+                  width={30}
+                  height={30}
+                  alt="image"
+                  className="object-cover"
+                />
               </div>
             </div>
           </div>

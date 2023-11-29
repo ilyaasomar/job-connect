@@ -12,7 +12,7 @@ import {
 } from "./ui/select";
 import { Search } from "lucide-react";
 import { motion } from "framer-motion";
-import { slideInFromLeft } from "@/utils/motion";
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 const Hero = () => {
   return (
     <div className="relative">
@@ -26,7 +26,7 @@ const Hero = () => {
               className="flex w-full lg:flex-1 items-start flex-col gap-y-10"
             >
               <motion.div
-                variants={slideInFromLeft(0.5)}
+                variants={slideInFromLeft(0.4)}
                 className="flex flex-row gap-x-2"
               >
                 <Switch />
@@ -40,16 +40,19 @@ const Hero = () => {
               >
                 Freelance Jobs and Talents at Your Fingertips{" "}
               </motion.h1>
-              <p className="font-normal font-inter text-[24px] leading-normal text-[#24272D]">
+              <motion.p
+                variants={slideInFromLeft(0.6)}
+                className="font-normal font-inter text-[24px] leading-normal text-[#24272D]"
+              >
                 Connect with top freelancers and clients on our platform! find
                 your perfect match for your next project.
-              </p>
+              </motion.p>
               <Button className="bg-primaryColor-0 font-inter hover:bg-primaryColor-0">
                 Make An Enquiry
               </Button>
             </motion.div>
             {/* left section */}
-            <div className="flex w-full z-10 lg:flex-1 items-center relative lg:justify-center">
+            <motion.div className="flex w-full z-10 lg:flex-1 items-center relative lg:justify-center">
               <Image
                 src="/images/hero-image.png"
                 width={350}
@@ -58,7 +61,10 @@ const Hero = () => {
                 className="object-cover z-10"
               />
               {/* star image */}
-              <div className="absolute top-28 right-20">
+              <motion.div
+                variants={slideInFromTop}
+                className="absolute top-28 right-20"
+              >
                 <Image
                   src="/images/Portal.png"
                   width={30}
@@ -66,7 +72,7 @@ const Hero = () => {
                   alt="image"
                   className="object-cover"
                 />
-              </div>
+              </motion.div>
               <div className="absolute rounded-lg flex flex-col -right-24 top-44 bg-white p-8">
                 <div className="flex gap-x-2 items-center">
                   <p className="text-[#131517] font-bold text-[24px] ">30K +</p>
@@ -121,7 +127,7 @@ const Hero = () => {
                   className="object-cover"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
