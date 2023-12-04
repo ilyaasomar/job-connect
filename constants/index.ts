@@ -120,3 +120,36 @@ export const categories = [
     skills: "378 Skills",
   },
 ];
+
+export const testmonials = [
+  {
+    id: 1,
+    name: "Allison Adam",
+    title: "Founder & CEO",
+    desciption:
+      "Lorem ipsum dolor sit amet consectetur. Sed non sit sed nunc nam nunc tellus. Sed non sit sed nunc nam nunc tellus.",
+    dotColor: "#00A79D",
+    quotoBgColor: "00A79D",
+    image: "/images/t1.png",
+  },
+  {
+    id: 2,
+    name: "Alex Jesse",
+    title: "Head of Design",
+    desciption:
+      "Lorem ipsum dolor sit amet consectetur. Sed non sit sed nunc nam nunc tellus. Sed non sit sed nunc nam nunc tellus.",
+    dotColor: "#966AF5",
+    quotoBgColor: "966AF5",
+    image: "/images/t2.png",
+  },
+  {
+    id: 3,
+    name: "Rahman Smith",
+    title: "Senior Developer",
+    desciption:
+      "Lorem ipsum dolor sit amet consectetur. Sed non sit sed nunc nam nunc tellus. Sed non sit sed nunc nam nunc tellus.",
+    dotColor: "#FCA326",
+    quotoBgColor: "FCA326",
+    image: "/images/t3.png",
+  },
+];
