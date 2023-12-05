@@ -10,15 +10,29 @@ const Footer = () => {
           JOB
         </h1>
         <div className="flex items-center gap-x-4">
-          <p>2023. All right reserved.</p>
-          <p>Privacy Policy.</p>
-          <p>Terms of Services</p>
+          <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
+            2023. All right reserved.
+          </p>
+          <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
+            Privacy Policy.
+          </p>
+          <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
+            Terms of Services
+          </p>
         </div>
         <div className="flex gap-x-2 items-center">
-          <Linkedin size={20} className="text-primaryColor" />
-          <Twitter size={20} className="text-primaryColor" />
-          <Instagram size={20} className="text-primaryColor" />
-          <Facebook size={20} className="text-primaryColor" />
+          <div className="flex items-center justify-center bg-primaryColor w-8 h-8 rounded-lg">
+            <Linkedin size={20} className="text-white" />
+          </div>
+          <div className="flex items-center justify-center bg-primaryColor w-8 h-8 rounded-lg">
+            <Twitter size={20} className="text-white" />
+          </div>
+          <div className="flex items-center justify-center bg-primaryColor w-8 h-8 rounded-lg">
+            <Instagram size={20} className="text-white" />
+          </div>
+          <div className="flex items-center justify-center bg-primaryColor w-8 h-8 rounded-lg">
+            <Facebook size={20} className="text-white" />
+          </div>
         </div>
       </div>
     </div>
