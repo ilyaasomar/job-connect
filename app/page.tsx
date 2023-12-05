@@ -1,6 +1,8 @@
 import About from "@/components/about";
 import Category from "@/components/category";
 import Companies from "@/components/companies";
+import CTA from "@/components/cta";
+import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
 import Opportunities from "@/components/opportunities";
@@ -15,7 +17,9 @@ export default function Home() {
       <Opportunities />
       <Category />
       <About />
-      <Testmonials /> 
+      <Testmonials />
+      <CTA />
+      <Footer />
     </div>
   );
 }
