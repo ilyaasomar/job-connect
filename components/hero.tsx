@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className="relative">
       <div className="bg-[#F4F9FF] h-fit">
-        <div className="px-4 md:container mx-auto">
+        <div className="px-4 lg:container mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-center py-12 gap-y-16 lg:gap-x-1">
             {/* right section */}
             <motion.div
@@ -52,7 +52,7 @@ const Hero = () => {
               </Button>
             </motion.div>
             {/* left section */}
-            <motion.div className="flex w-full z-10 lg:flex-1 items-center relative lg:justify-center">
+            <motion.div className="flex w-full z-10 justify-center lg:flex-1 items-center relative lg:justify-center">
               <Image
                 src="/images/hero-image.png"
                 width={350}
@@ -62,18 +62,18 @@ const Hero = () => {
               />
               {/* star image */}
               <motion.div
-                variants={slideInFromTop}
-                className="absolute top-28 right-20"
+                variants={slideInFromLeft(0.5)}
+                className="hidden md:block absolute top-28 right-20"
               >
                 <Image
                   src="/images/Portal.png"
                   width={30}
                   height={30}
                   alt="image"
-                  className="object-cover"
+                  className="hidden md:block object-cover"
                 />
               </motion.div>
-              <div className="absolute rounded-lg flex flex-col -right-24 top-44 bg-white p-8">
+              <div className="absolute rounded-lg hidden md:flex flex-col right-0 2xl:-right-24 top-44 bg-white p-8 z-10">
                 <div className="flex gap-x-2 items-center">
                   <p className="text-[#131517] font-bold text-[24px] ">30K +</p>
                   <Image
@@ -81,6 +81,7 @@ const Hero = () => {
                     width={30}
                     height={30}
                     alt="image"
+                    className=""
                   />
                 </div>
                 <p className="text-[#131517] text-[16px] font-semibold leading-[24px]">
@@ -94,7 +95,7 @@ const Hero = () => {
                   width={30}
                   height={30}
                   alt="image"
-                  className="object-cover"
+                  className="hidden md:block object-cover"
                 />
               </div>
               {/* bottom star lett */}
@@ -104,7 +105,7 @@ const Hero = () => {
                   width={30}
                   height={30}
                   alt="image"
-                  className="object-cover"
+                  className="hidden md:block object-cover"
                 />
               </div>
               {/* wave left */}
@@ -114,7 +115,7 @@ const Hero = () => {
                   width={200}
                   height={200}
                   alt="image"
-                  className="object-cover"
+                  className="hidden md:block object-cover"
                 />
               </div>
               {/* wave right */}
@@ -124,7 +125,7 @@ const Hero = () => {
                   width={200}
                   height={200}
                   alt="image"
-                  className="object-cover"
+                  className="hidden md:block object-cover"
                 />
               </div>
             </motion.div>
@@ -132,7 +133,7 @@ const Hero = () => {
         </div>
       </div>
       {/* <CallToAction /> */}
-      <div className="container mx-auto absolute bg-white hidden md:flex rounded-lg items-center justify-center shadow-lg w-full px-4 xl:w-2/3 left-1/2 lg:top-[670px] z-50 h-24 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="px-4 2xl:container mx-auto absolute bg-white hidden md:flex rounded-lg items-center justify-center shadow-lg w-full lg:px-4 lg:w-full xl:w-2/3 left-1/2 lg:top-[670px] z-50 h-24 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex flex-1 justify-between items-center">
           <div className="flex items-center gap-x-10">
             <div className="flex items-center gap-x-4 border-r-2 px-7">
@@ -147,7 +148,7 @@ const Hero = () => {
                 </SelectContent>
               </Select>
             </div>
-            <div className="px-6 py-2 rounded-full bg-[#E4EEFC]">
+            <div className="px-6 py-2 rounded-full bg-[#E4EEFC] hidden lg:block">
               <p className="text-primaryColor text-[16px] leading-[24px] font-semibold">
                 Web Design
               </p>

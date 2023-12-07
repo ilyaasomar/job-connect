@@ -8,7 +8,7 @@ const CTA = () => {
       <div className="w-full bg-primaryColor rounded-xl ">
         <div className="flex items-center relative">
           {/* left section */}
-          <div className="flex flex-col pl-12 gap-y-6 py-24">
+          <div className="flex flex-col px-10 lg:pl-12 gap-y-6 py-24">
             <h1 className="text-[36px] font-bold text-white ">
               Explore New Job Now
             </h1>
@@ -22,11 +22,11 @@ const CTA = () => {
             </Button>
           </div>
           {/* right section */}
-          <div className="w-full">
+          <div className="hidden xl:flex w-full ">
             <Image
               src="/images/women.png"
-              width={1000}
-              height={1000}
+              width={800}
+              height={800}
               alt=""
               className="w-fit object-contain absolute bottom-0 -right-12"
             />

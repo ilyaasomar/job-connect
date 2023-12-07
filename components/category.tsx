@@ -5,12 +5,12 @@ import React from "react";
 const Category = () => {
   return (
     <div className="w-full bg-[#F3F7FA] mt-36">
-      <div className="container mx-auto pt-12">
+      <div className="px-4 lg:container mx-auto pt-12">
         <div className="flex flex-col gap-y-7 py-16">
           <h1 className="font-bold text-[36px] text-[#131517] text-start ">
             Browse Talent by Category
           </h1>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
             {categories.map((category) => (
               <div
                 key={category.id}

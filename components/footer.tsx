@@ -13,10 +13,10 @@ const Footer = () => {
           <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
             2023. All right reserved.
           </p>
-          <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
+          <p className="hidden lg:block text-[#6E7175] font-semibold text-[16px] leading-6">
             Privacy Policy.
           </p>
-          <p className="text-[#6E7175] font-semibold text-[16px] leading-6">
+          <p className="hidden lg:block text-[#6E7175] font-semibold text-[16px] leading-6">
             Terms of Services
           </p>
         </div>

@@ -5,10 +5,10 @@ import React from "react";
 const About = () => {
   return (
     <div className="w-full mt-36">
-      <div className="container mx-auto ">
-        <div className="flex items-center gap-x-16">
+      <div className="px-4 lg:container mx-auto ">
+        <div className="flex flex-col lg:flex-row items-center gap-x-16 gap-y-7">
           {/* left section */}
-          <div className="flex flex-1">
+          <div className="flex w-full lg:flex-1 ">
             <div className="flex flex-col gap-y-4">
               <h1 className="font-bold text-[36px] text-[#131517] text-start ">
                 Whay We are Most Popular
@@ -59,9 +59,9 @@ const About = () => {
             </div>
           </div>
           {/* right section */}
-          <div className="flex-1 h-fit">
+          <div className="w-full lg:flex-1 h-fit">
             <div className="bg-[#F3F7FA] relative flex items-center justify-center rounded-lg pt-10">
-              <Image src="/images/1.png" width={250} height={250} alt="image" />
+              <Image src="/images/1.png" width={250} height={250} alt="image" className="z-10" />
               <div className="absolute -left-16 shadow-2xl top-16 rounded-md w-52 py-3 bg-white px-4 flex gap-x-2">
                 <ShieldCheck />
                 <p className="text-[18px] text-[#131517] leading-[24px] font-semibold">
@@ -79,7 +79,7 @@ const About = () => {
                 />
               </div>
               {/* bottom star right */}
-              <div className="absolute top-[260px] right-12">
+              <div className="absolute top-[260px] right-4 md:right-12">
                 <Image
                   src="/images/Portal.png"
                   width={30}
@@ -89,7 +89,7 @@ const About = () => {
                 />
               </div>
               {/* bottom star lett */}
-              <div className="absolute top-[330px] left-12">
+              <div className="absolute top-[330px] left-4 md:left-12">
                 <Image
                   src="/images/Portal.png"
                   width={30}

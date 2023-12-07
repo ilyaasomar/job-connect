@@ -6,7 +6,7 @@ import React from "react";
 const Testmonials = () => {
   return (
     <div className="mt-36">
-      <div className="container mx-auto ">
+      <div className="px-4 lg:container mx-auto ">
         <div className="flex flex-col ">
           {/* top section */}
           <div className="flex justify-between items-center">
@@ -21,7 +21,7 @@ const Testmonials = () => {
               </p>
             </div>
             {/* right section */}
-            <div className="max-w-xl flex items-center gap-x-2">
+            <div className="hidden md:flex max-w-xl items-center gap-x-2">
               {/* div one */}
               <div className="border border-primaryColor w-8 h-8 rounded-full flex items-center justify-center hover:bg-primaryColor hover:text-white">
                 <ArrowLeft
@@ -39,7 +39,7 @@ const Testmonials = () => {
             </div>
           </div>
           {/* testmonials */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-x-5 mt-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-10">
             {testmonials.map((test) => (
               <div className="flex flex-col relative gap-y-5 items-center border-[0.5px] border-gray-200 p-6">
                 <Image src={test.image} width={80} height={80} alt="image" />

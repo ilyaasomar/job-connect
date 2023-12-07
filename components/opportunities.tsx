@@ -14,39 +14,36 @@ import { User } from "lucide-react";
 
 const Opportunities = () => {
   return (
-    <div className="container mx-auto mt-36">
+    <div className="px-4 lg:container mx-auto mt-36">
       <div className="flex flex-col gap-y-4">
-        <p className="font-bold text-[36px] ">
+        <div className="font-bold text-[36px]">
           <span className="text-primaryColor">Latest </span>
           <span className="text-black">Job Opportunities</span>
-        </p>
+        </div>
         {/* main section */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-10 gap-y-12 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-10 gap-y-12 mt-10">
           {/* frist div */}
           <div className="flex flex-col gap-y-4">
             {/* div one */}
             {opportunitiesCardInfo.map((info) => (
-              <>
-                <div className="px-4 border-l-2 flex flex-col gap-y-2 group-[]:hover:border-primaryColor">
-                  <div className="flex items-center gap-x-10">
-                    <p className="text-[24px] font-normal text-primaryColor">
-                      {info.title}
+              <div className="px-4 border-l-2 flex flex-col gap-y-2 group-[]:hover:border-primaryColor">
+                <div className="flex items-center gap-x-10">
+                  <p className="text-[24px] font-normal text-primaryColor">
+                    {info.title}
+                  </p>
+                  <div
+                    className={cn(
+                      "w-8 h-8 flex items-center justify-center rounded-md p-2"
+                    )}
+                    // @ts-ignore
+                    style={{ backgroundColor: info.bgColor }}
+                  >
+                    <p className="text-[18px] leading-[24px] text-[#131517]">
+                      {info.amount}
                     </p>
-                    <div
-                      className={cn(
-                        "w-8 h-8 flex items-center justify-center rounded-md p-2"
-                      )}
-                      // @ts-ignore
-                      style={{ backgroundColor: info.bgColor }}
-                    >
-                      {/* {`w-8 h-8 flex items-center justify-center rounded-md p-2 bg-${info.bgColor}` */}
-                      <p className="text-[18px] leading-[24px] text-[#131517]">
-                        {info.amount}
-                      </p>
-                    </div>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
           {/* second card */}
@@ -92,7 +89,6 @@ const Opportunities = () => {
                         width={40}
                         height={40}
                         alt="image"
-                        className=""
                       />
                     </div>
                     <div className="flex flex-col items-start">
